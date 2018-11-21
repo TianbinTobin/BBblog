@@ -1,9 +1,8 @@
 ---
 title: CentOS7.5下安装Mysql
-description: 在 CentOS 7 及以上的系统中使用 yum 安装 MySQL 8
 ---
 
-#### 1、添加 MySQL Yum 存储库
+#### 添加 MySQL Yum 存储库
 
 - 访问https://dev.mysql.com/downloads/repo/yum/，访问MySQL Yum 存储库的下载页面 。
 - 选择并下载适用于您的平台的发行包。
@@ -19,13 +18,13 @@ description: 在 CentOS 7 及以上的系统中使用 yum 安装 MySQL 8
   yum repolist all | grep mysql
 ```
 <!-- more -->
-#### 2、安装 MySQL
+#### 安装 MySQL
 
 ```
   sudo yum install mysql-community-server
 ```
 
-#### 3、启动 MySQL 服务器
+#### 启动 MySQL 服务器
 
 对于基于 EL7 的平台，这是启用首选命令：
 
@@ -62,7 +61,7 @@ sudo systemctl status mysqld.service
   ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 ```
 
-#### 4、开启 MySQL 远程连接
+#### 开启 MySQL 远程连接
 
 选择 mysql 数据库：
 
