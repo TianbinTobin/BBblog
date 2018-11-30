@@ -4,19 +4,24 @@
 
 # Site
 title: Tianbin
-subtitle:
-description:
-keywords:
+subtitle: Tianbin的博客
+description: 身是菩提树，心如明镜台，时时勤拂拭，勿使惹尘埃。
+keywords: Tianbin,Tianbin博客,Tianbin俱乐部,Tianbin官方网站
 author: Tian Bin
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.tianbin.club
+url: https://www.tianbin.club/
 root: /
-permalink: :year/:month/:day/:title.html
+permalink: posts/:abbrlink.html
 permalink_defaults:
+
+# https://github.com/Rozbo/hexo-abbrlink
+abbrlink:  
+  alg: crc32  # 算法：crc16(default) and crc32  
+  rep: hex    # 进制：dec(default) and hex  
 
 # Directory
 source_dir: source

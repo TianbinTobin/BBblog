@@ -1,5 +1,11 @@
 ---
 title: CentOS7.5下安装Mysql
+keywords: centos,yum,mysql
+comments: false
+tags: 
+- CentOS
+- Mysql
+abbrlink: b356565e
 ---
 
 #### 添加 MySQL Yum 存储库
